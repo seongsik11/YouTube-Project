@@ -6,8 +6,10 @@ export default function Video({width, height}) {
 
     const [videos, setVideos] = useState("");
 
+    const url = "https://www.googleapis.com/youtube/v3/search?part=snippet&q=movie&key=AIzaSyBGQQv0H_lEPn79gwqqbNj1yl89gCRIpWE"
+
     const dataInfo = async () => {
-        await axios.get("https://www.googleapis.com/youtube/v3/search?part=snippet&q=movie&key=AIzaSyALE8i5ioHbPaLZqIvKJf-4m_w4wn8i0HI")
+        await axios.get(url)
             .then((res) => {
                     setVideos(res.data)
                     console.log(res.data)
