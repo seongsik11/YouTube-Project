@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { AiOutlineSearch } from 'react-icons/ai';
 
-const _input = styled.input`
+const SearchInput = styled.input`
 {width : 500px;
   height : 35px;
   border-top-left-radius: 25px;
@@ -12,7 +12,7 @@ const _input = styled.input`
 };
 `;
 
-const _button = styled.button`
+const SearchButton = styled.button`
 {width : 65px;
   height : 39px;
   border : solid 1px lightgrey;
@@ -30,7 +30,7 @@ const _button = styled.button`
 
 
 
-const _div = styled.div`
+const SearchDiv = styled.div`
 {
   width : fit-content;
   height : fit-content;
@@ -43,12 +43,12 @@ const _div = styled.div`
 function search() {
     return (
 
-            <_div>
-        <_input type={"text"} placeholder={"검색"}></_input>
-        <_button>
+            <SearchDiv>
+        <SearchInput type={"text"} placeholder={"검색"}></SearchInput>
+        <SearchButton style={{verticalAlign : "middle"}}>
             <AiOutlineSearch/>
-        </_button>
-            </_div>
+        </SearchButton>
+            </SearchDiv>
 
     )
 }
