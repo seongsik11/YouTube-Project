@@ -46,7 +46,7 @@ function Search() {
             <SearchDiv>
         <SearchInput type={"text"} placeholder={"검색"}></SearchInput>
         <SearchButton style={{verticalAlign : "middle"}}>
-            <AiOutlineSearch/>
+            <AiOutlineSearch size="20"/>
         </SearchButton>
             </SearchDiv>
 

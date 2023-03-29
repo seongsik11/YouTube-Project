@@ -1,27 +1,49 @@
 import React from "react";
 import styled from "styled-components";
-import { BsYoutube } from "react-icons/bs"
+import { SiYoutube } from "react-icons/si";
+import {GrCatalogOption} from "react-icons/gr";
 
-const youtube = styled.div`
+const YTlogo = styled.div`
 {
-  background-color: black;
+ 
+  width : fit-content;
+  height : fit-content;
+  display: flex;
 }
+
+  .MainLogo {
+    margin-top: 7px;
+    margin-right: 5px;
+    height : 30px;
+    width : 30px;
+  }
+  
 `;
 
-function Logo() {
+const LogoP = styled.p`
+{
+  font-size: 15px;
+  
+}`;
+
+function logo() {
 
 
     function refreshPage() {
         window.location.reload(false);
     }
     return (
-        <div className={youtube} onClick={refreshPage}>
-            <BsYoutube/>
-        </div>
+
+        <YTlogo onClick={refreshPage}>
+            <SiYoutube className="MainLogo" color="red"/>
+            <LogoP>YouTube</LogoP>
+        </YTlogo>
+
+
     );
 }
 
-export default Logo;
+export default logo;
 
 
 
