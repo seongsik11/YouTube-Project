@@ -1,21 +1,27 @@
 import React from "react";
-import Search from "../Atoms/Search";
-import Logo from "../Atoms/Logo";
 import {Link} from "react-router-dom";
 import VideoPage from "../../VideoForm/pages/VideoPage";
 import SideButtons from "../molecules/SideButtons";
 import ContentsButtons from "../molecules/ContentsButtons";
 import styled from "styled-components";
+import HeadHamb from "../molecules/HeadHamb";
 
 const Main = styled.div`
         display: flex;
     `;
 
+const MainDiv = styled.div`
+{
+  width : 100vw;
+  display: flex;
+}`;
+
 export default function YoutubeFirstPage() {
     return (
         <div>
-            <Search />
-            <Logo />
+            <MainDiv>
+                <HeadHamb />
+            </MainDiv>
             <Main>
                 <SideButtons />
                 <ContentsButtons />

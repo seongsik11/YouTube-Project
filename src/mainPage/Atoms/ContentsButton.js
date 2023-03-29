@@ -17,7 +17,7 @@ const ContentsButton = ({name}) => {
 
       &:hover {
         background-color: #E1E1E1;
-        border-radius: 11px;
+        border-radius: 8px;
       }
 
       &:active {
