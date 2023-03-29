@@ -8,7 +8,7 @@ const youtube = styled.div`
 }
 `;
 
-function logo() {
+function Logo() {
 
 
     function refreshPage() {
@@ -21,7 +21,7 @@ function logo() {
     );
 }
 
-export default logo;
+export default Logo;
 
 
 

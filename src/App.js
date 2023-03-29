@@ -1,19 +1,23 @@
 import React from "react";
-import search from "./mainPage/Atoms/search";
-import Search from "./mainPage/Atoms/search";
-import Logo from "./mainPage/Atoms/logo";
-
+import Search from "./mainPage/atoms/Search";
+import Logo from "./mainPage/atoms/Logo";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import YoutubeFirstPage from "./mainPage/pages/YoutubeFirstPage";
+import VideoPage from "./VideoForm/pages/VideoPage";
 
 
 
 function App() {
     return (
 
-    <>
-        <Search />
-
-        <Logo />
-    </>
+    <div>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={< YoutubeFirstPage/>} />
+                <Route path="video" element={<VideoPage/>} />
+            </Routes>
+        </BrowserRouter>
+    </div>
     );
 }
 
