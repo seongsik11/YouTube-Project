@@ -1,22 +1,13 @@
 import React from "react";
-import Search from "../Atoms/Search";
-import Logo from "../Atoms/Logo";
+
 import {Link} from "react-router-dom";
 import VideoPage from "../../VideoForm/pages/VideoPage";
-import Profile from "../Atoms/Profile";
-import styled from "styled-components";
-import Hamburger from "../Atoms/Hamburger";
 
-const HeadDiv = styled.div`
-{
-  margin : 0;
-  padding : 0;
-  width : 100vw;
-  height : 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}`;
+import styled from "styled-components";
+import HeadHamb from "../Molecules/HeadHamb";
+
+
+
 
 const MainDiv = styled.div`
 {
@@ -29,12 +20,7 @@ export default function YoutubeFirstPage() {
     return (
         <div style={{width : "100vh"}}>
             <MainDiv>
-                <Hamburger />
-                <HeadDiv>
-                    <Logo />
-                    <Search />
-                    <Profile />
-                </HeadDiv>
+                <HeadHamb/>
             </MainDiv>
             <Link to="video">
                 <VideoPage/>

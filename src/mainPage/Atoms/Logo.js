@@ -34,8 +34,8 @@ function logo() {
     }
     return (
 
-        <YTlogo>
-            <SiYoutube onClick={refreshPage} className="MainLogo" />
+        <YTlogo onClick={refreshPage}>
+            <SiYoutube className="MainLogo" color="red"/>
             <LogoP>YouTube</LogoP>
         </YTlogo>
 
