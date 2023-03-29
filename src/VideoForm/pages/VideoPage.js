@@ -3,11 +3,16 @@ import Styled from "styled-components";
 import Video from "../atoms/Video";
 import VideoTitleBox from "../molecules/VideoTitleBox";
 import VideoList from "../molecules/VideoList";
+import HeadHamb from "../../mainPage/molecules/HeadHamb";
+import styled from "styled-components";
 
 export default function VideoPage() {
 
     return(
-        <Container>
+        <div>
+            <MainDiv>
+                <HeadHamb />
+            </MainDiv>
             <VideoContainer>
                 <VideoBox>
                     <Video width={"100%"} height={"100%"}/>
@@ -18,23 +23,16 @@ export default function VideoPage() {
                 </VideoListBox>
             </VideoContainer>
             <ChatListContainer></ChatListContainer>
-        </Container>
+        </div>
     );
 }
 
-const Container = Styled.div`
-    display: flex;
-`;
 
-const HeaderBox = Styled.div`
-    display: flex;
-    width: 100%;
-    height: 56px;
-    flex-direction: 'row'; 
-    align-items: 'center'; 
-    padding: 0 16px;
-`;
-
+const MainDiv = styled.div`
+{
+  width : 100vw;
+  display: flex;
+}`;
 
 
 const VideoContainer = Styled.div`
@@ -47,7 +45,7 @@ const VideoContainer = Styled.div`
     margin-top: 50px;
     margin-left: 5%;
     margin-right: 5%;
-    border: 1px solid black;
+    
     
 `;
 
