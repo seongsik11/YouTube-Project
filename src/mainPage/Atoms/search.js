@@ -40,7 +40,7 @@ const SearchDiv = styled.div`
 
 
 
-function search() {
+function Search() {
     return (
 
             <SearchDiv>
@@ -53,4 +53,4 @@ function search() {
     )
 }
 
-export default search;
+export default Search;
