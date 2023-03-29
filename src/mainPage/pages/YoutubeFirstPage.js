@@ -27,7 +27,7 @@ export default function YoutubeFirstPage() {
                 <ContentsButtons />
             </Main>
             <Link to="video">
-            <VideoPage/>
+            <h1>videoComponent</h1>
             </Link>
         </div>
     );
