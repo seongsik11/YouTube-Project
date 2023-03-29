@@ -14,15 +14,13 @@ const HeadDiv = styled.div`
   width : 100vw;
   height : 60px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }`;
 
 const MainDiv = styled.div`
 {
   width : 100vw;
-  
-  margin : 0;
-  padding : 0;
   display: flex;
 }`;
 

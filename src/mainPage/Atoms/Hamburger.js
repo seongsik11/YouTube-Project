@@ -4,7 +4,7 @@ import {RxHamburgerMenu} from "react-icons/rx";
 
 const HamDiv = styled.div`
 {
-  margin-top: 5px;
+  margin-top: 13px;
   margin-right: 10px;
   width : 30px;
   height : 30px;
